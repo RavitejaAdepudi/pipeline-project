@@ -19,6 +19,16 @@ pipeline {
                 }
             }
         }
+        stage('Deploy to Tomcat'){
+            steps {
+             
+       
+                  
+                  sh 'cp /root/.jenkins/workspace/raviprojpipeline/target/*.war /opt/apache-tomcat-8.5.29/webapps/'
+                  
+                  }
+                  
+                  }
        
         
 
