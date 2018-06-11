@@ -24,7 +24,7 @@ pipeline {
              
        
                   
-                  sh 'cp -r  /root/.jenkins/workspace/raviprojpipeline/target/*.war /opt/apache-tomcat-8.5.29/webapps/'
+                  sh 'cp -r  /root/.jenkins/workspace/raviprojpipeline/target/* /opt/apache-tomcat-8.5.29/webapps/'
                   
                   }
                   
