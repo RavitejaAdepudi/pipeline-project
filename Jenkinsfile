@@ -24,7 +24,7 @@ pipeline {
              withMaven(maven : 'maven_3_5_0') {
        
                   
-                  sh 'cp ./target/*.war root@ip-172-31-21-9:/opt/apache-tomcat-8.5.29/webapps/'
+                  sh 'scp root@ip-172-31-21-9:./target/*.war root@ip-172-31-21-9:/opt/apache-tomcat-8.5.29/webapps/'
                   
                   }
                   
