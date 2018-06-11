@@ -19,7 +19,7 @@ pipeline {
                 }
             }
         }
-        sshagent([tomcat-dev']) {
+        sshagent(['tomcat-dev']) {
         stage('Deploy to Tomcat'){
             steps {
             
