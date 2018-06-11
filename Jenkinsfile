@@ -20,9 +20,13 @@ pipeline {
             }
         }
         stage('Deploy to Tomcat'){
-        sshagent(['tomcat-deploy]){
+            
+        sshagent(['tomcat-deploy']){
+                  
                   sh 'scp -o StrictHostKeyChecking=no target/*war root@ip-172-31-21-9:/opt/apache-tomcat-8.5.29/webapps'
+                  
                   }
+                  
                   }
 
  
