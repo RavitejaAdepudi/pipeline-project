@@ -24,7 +24,7 @@ pipeline {
              
        
                   
-                  sh 'cp root@ip-172-31-21-9:./target/*.war /opt/apache-tomcat-8.5.29/webapps/'
+                  sh 'cp ./target/*.war /opt/apache-tomcat-8.5.29/webapps/'
                   
                   }
                   
