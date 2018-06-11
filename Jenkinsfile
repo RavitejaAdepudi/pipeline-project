@@ -24,7 +24,7 @@ pipeline {
             
        
                   
-                  sh 'scp -o StrictHostKeyChecking=no target/.*war http://13.127.248.227'
+                  sh 'scp */target/.*war http://13.127.248.227'
                   
                   }
                   
