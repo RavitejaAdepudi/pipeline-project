@@ -24,7 +24,7 @@ pipeline {
             
         sshagent(['tomcat-deploy']){
                   
-                  sh 'scp -o StrictHostKeyChecking=no target/*war root@ip-172-31-21-9:/opt/apache-tomcat-8.5.29/webapps/'
+                  sh 'scp -o StrictHostKeyChecking=no target/*war http://13.127.248.227:8080:/opt/apache-tomcat-8.5.29/webapps/'
                   
                   }
                   
