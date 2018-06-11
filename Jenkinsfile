@@ -19,6 +19,7 @@ pipeline {
                 }
             }
         }
+        sshagent([tomcat-dev']) {
         stage('Deploy to Tomcat'){
             steps {
             
@@ -29,7 +30,7 @@ pipeline {
                   }
                   
                   }
-        
+                  }
 
  
         
