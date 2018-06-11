@@ -25,7 +25,7 @@ pipeline {
             
        
                   
-                  sh 'scp -o StrictHostKeyChecking=no target/*war http://13.127.248.227:/opt/apache-tomcat-8.5.29/webapps/'
+                  sh 'scp -o StrictHostKeyChecking=no target/.*war http://13.127.248.227:/opt/apache-tomcat-8.5.29/webapps/'
                   
                   }
                   
